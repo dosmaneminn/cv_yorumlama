@@ -37,7 +37,7 @@ function App() {
     const mail = aktifIkMail || ikEmail;
     setYukleniyor(true);
     try {
-      const cevap = await axios.get(`http://localhost:5000/api/cvs?ikEmail=${mail}`)
+      const cevap = await axios.get(`https://cv-yorumlama.onrender.com/api/cvs?ikEmail=${mail}`)
       setBasvurular(cevap.data)
     } catch (hata) {
       console.error("Hata:", hata)
@@ -112,7 +112,7 @@ function App() {
 
       const { data: publicData } = supabase.storage.from('cv_deposu').getPublicUrl(dosyaAdi);
       
-      await axios.post('http://localhost:5000/api/analyze', {
+      await axios.post('https://cv-yorumlama.onrender.com/api/analyze', {
         pdfUrl: publicData.publicUrl,
         adayEmail: yeniAdayEmail,
         adSoyad: yeniAdayAd,
