@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Studio48 CrossFit - Ankara'nın en modern CrossFit salonu. Profesyonel antrenörler eşliğinde sınırlarını aş!">
+    <title>Studio48 CrossFit | Sınırlarını Aş</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- GSAP for professional animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <span class="preloader-logo">STUDIO<span>48</span></span>
+            <div class="preloader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-content">
+            <a href="#home" class="logo">
+                <span class="logo-text">STUDIO</span><span class="logo-accent">48</span>
+            </a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Ana Sayfa</a></li>
+                    <li><a href="#about" class="nav-link">Hakkımızda</a></li>
+                    <li><a href="#schedule" class="nav-link">Program</a></li>
+                    <li><a href="#trainers" class="nav-link">Ekip</a></li>
+                    <li><a href="#contact" class="nav-link">İletişim</a></li>
+                </ul>
+            </nav>
+
+            <a href="#contact" class="btn btn-primary header-cta">Başla</a>
+
+            <button class="hamburger" id="hamburger" aria-label="Menüyü aç">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-particles" id="particles"></div>
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">CrossFit Affiliate</div>
+            <h1 class="hero-title">
+                <span class="hero-title-line" data-animate>SINIRLARINI</span>
+                <span class="hero-title-line accent" data-animate>AŞ</span>
+            </h1>
+            <p class="hero-subtitle" data-animate>Profesyonel antrenörler eşliğinde dönüşümünü başlat.</p>
+            <div class="hero-cta" data-animate>
+                <a href="#contact" class="btn btn-primary">Ücretsiz Deneme</a>
+                <a href="#schedule" class="btn btn-ghost">Program</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span class="hero-scroll-text">Keşfet</span>
+            <div class="hero-scroll-line"></div>
+        </div>
+        <div class="hero-image-info">
+            <p class="image-note">[ GÖRSEL: Dramatik aydınlatmalı CrossFit salonu - duman efekti, halter kaldıran
+                sporcular ]</p>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="500">0</span>
+                    <span class="stat-label">Üye</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="8">0</span>
+                    <span class="stat-label">Antrenör</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="50">0</span>
+                    <span class="stat-label">Haftalık Ders</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="800">0</span>
+                    <span class="stat-label">m² Alan</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-tag">Hakkımızda</span>
+                    <h2 class="section-title">CrossFit <span class="accent">Deneyimi</span></h2>
+                    <p class="about-text">
+                        Studio48, 2020'den bu yana Ankara'da profesyonel CrossFit eğitimi sunmaktadır.
+                        Son teknoloji ekipmanlarımız ve uzman kadromuzla her seviyeden sporculara
+                        hizmet veriyoruz.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <polyline points="22 4 12 14.01 9 11.01" />
+                                </svg>
+                            </div>
+                            <span>Rogue Ekipmanları</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <polyline points="22 4 12 14.01 9 11.01" />
+                                </svg>
+                            </div>
+                            <span>Level 2 Antrenörler</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <polyline points="22 4 12 14.01 9 11.01" />
+                                </svg>
+                            </div>
+                            <span>Kişisel Takip</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <polyline points="22 4 12 14.01 9 11.01" />
+                                </svg>
+                            </div>
+                            <span>Topluluk Ruhu</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Ziyaret Et</a>
+                </div>
+                <div class="about-image">
+                    <div class="about-image-wrapper">
+                        <div class="image-placeholder">
+                            <p>[ GÖRSEL: Modern gym iç mekanı - geniş açı, endüstriyel tasarım ]</p>
+                        </div>
+                        <div class="about-image-accent"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule" id="schedule">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Program</span>
+                <h2 class="section-title">Haftalık <span class="accent">Ders Programı</span></h2>
+            </div>
+
+            <div class="schedule-tabs">
+                <button class="schedule-tab active" data-day="weekday">Hafta İçi</button>
+                <button class="schedule-tab" data-day="weekend">Hafta Sonu</button>
+            </div>
+
+            <div class="schedule-content active" id="weekday">
+                <div class="schedule-grid">
+                    <div class="schedule-card">
+                        <span class="schedule-time">07:00</span>
+                        <div class="schedule-info">
+                            <span class="schedule-type wod">WOD</span>
+                            <span class="schedule-duration">60 dk</span>
+                        </div>
+                    </div>
+                    <div class="schedule-card">
+                        <span class="schedule-time">09:00</span>
+                        <div class="schedule-info">
+                            <span class="schedule-type mobility">Mobility</span>
+                            <span class="schedule-duration">45 dk</span>
+                        </div>
+                    </div>
+                    <div class="schedule-card">
+                        <span class="schedule-time">12:00</span>
+                        <div class="schedule-info">
+                            <span class="schedule-type wod">WOD</span>
+                            <span class="schedule-duration">60 dk</span>
+                        </div>
+                    </div>
+                    <div class="schedule-card">
+                        <span class="schedule-time">18:00</span>
+                        <div class="schedule-info">
+                            <span class="schedule-type strength">Strength</span>
+                            <span class="schedule-duration">75 dk</span>
+                        </div>
+                    </div>
+                    <div class="schedule-card">
+                        <span class="schedule-time">19:30</span>
+                        <div class="schedule-info">
+                            <span class="schedule-type wod">WOD</span>
+                            <span class="schedule-duration">60 dk</span>
+                        </div>
+                    </div>
+                    <div class="schedule-card">
+                        <span class="schedule-time">21:00</span>
+                        <div class="schedule-info">
+                            <span class="schedule-type open">Open Gym</span>
+                            <span class="schedule-duration">90 dk</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule-content" id="weekend">
+                <div class="schedule-grid">
+                    <div class="schedule-card">
+                        <span class="schedule-time">09:00</span>
+                        <div class="schedule-info">
+                            <span class="schedule-type wod">WOD</span>
+                            <span class="schedule-duration">60 dk</span>
+                        </div>
+                    </div>
+                    <div class="schedule-card">
+                        <span class="schedule-time">11:00</span>
+                        <div class="schedule-info">
+                            <span class="schedule-type strength">Strength</span>
+                            <span class="schedule-duration">75 dk</span>
+                        </div>
+                    </div>
+                    <div class="schedule-card">
+                        <span class="schedule-time">14:00</span>
+                        <div class="schedule-info">
+                            <span class="schedule-type open">Open Gym</span>
+                            <span class="schedule-duration">120 dk</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedule-legend">
+                <div class="legend-item"><span class="legend-dot wod"></span>WOD</div>
+                <div class="legend-item"><span class="legend-dot strength"></span>Strength</div>
+                <div class="legend-item"><span class="legend-dot mobility"></span>Mobility</div>
+                <div class="legend-item"><span class="legend-dot open"></span>Open Gym</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section class="trainers" id="trainers">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Ekip</span>
+                <h2 class="section-title">Uzman <span class="accent">Antrenörler</span></h2>
+            </div>
+
+            <div class="trainers-grid">
+                <div class="trainer-card" data-tilt>
+                    <div class="trainer-image">
+                        <div class="image-placeholder trainer-placeholder">
+                            <p>[ GÖRSEL: Erkek antrenör - profesyonel portre ]</p>
+                        </div>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Ahmet Yılmaz</h3>
+                        <span class="trainer-role">Baş Antrenör</span>
+                        <p>CF-L3 · 8 Yıl Deneyim</p>
+                    </div>
+                </div>
+
+                <div class="trainer-card" data-tilt>
+                    <div class="trainer-image">
+                        <div class="image-placeholder trainer-placeholder">
+                            <p>[ GÖRSEL: Kadın antrenör - profesyonel portre ]</p>
+                        </div>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Elif Kaya</h3>
+                        <span class="trainer-role">CrossFit Coach</span>
+                        <p>CF-L2 · Beslenme Uzmanı</p>
+                    </div>
+                </div>
+
+                <div class="trainer-card" data-tilt>
+                    <div class="trainer-image">
+                        <div class="image-placeholder trainer-placeholder">
+                            <p>[ GÖRSEL: Erkek antrenör - profesyonel portre ]</p>
+                        </div>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Mert Özdemir</h3>
+                        <span class="trainer-role">Strength Coach</span>
+                        <p>CF-L2 · Powerlifting</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>İlk Dersin Bizden</h2>
+                <p>Ücretsiz deneme dersine katıl, CrossFit ailesine katıl.</p>
+                <a href="#contact" class="btn btn-primary btn-lg">Hemen Başla</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">İletişim</span>
+                    <h2 class="section-title">Bize <span class="accent">Ulaşın</span></h2>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Adres</strong>
+                                <p>Kızılay Mah. Atatürk Bulvarı No: 48<br>Çankaya, Ankara</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Telefon</strong>
+                                <p>+90 312 XXX XX XX</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Çalışma Saatleri</strong>
+                                <p>Hafta içi: 06:00 - 22:00<br>Cumartesi: 08:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name">Adınız Soyadınız</label>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder=" ">
+                                <label for="email">E-posta</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder=" ">
+                                <label for="phone">Telefon</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected></option>
+                                <option value="trial">Ücretsiz Deneme</option>
+                                <option value="membership">Üyelik</option>
+                                <option value="other">Diğer</option>
+                            </select>
+                            <label for="subject">Konu</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="3" placeholder=" "></textarea>
+                            <label for="message">Mesajınız</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Gönder
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <span class="logo-text">STUDIO</span><span class="logo-accent">48</span>
+                    </a>
+                    <p>CrossFit ile sınırlarını aş.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Ana Sayfa</a>
+                    <a href="#about">Hakkımızda</a>
+                    <a href="#schedule">Program</a>
+                    <a href="#contact">İletişim</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Studio48 CrossFit. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vanilla Tilt for card effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
